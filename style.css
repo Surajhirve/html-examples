@@ -1,0 +1,23 @@
+h1{color: red;}
+
+
+
+#order th{background: red;color: white;
+}
+ 
+
+
+#find { border:;background:white;border-collapse:collapse;  }
+ #finds { border-bottom: 2px dashed blue;}
+ #find  th{ background:green; color: white;}
+ /*#find tr:nth-child(odd){ background: lightgrey;color: black;}*/
+
+ #find tr:nth-child(even){background: gray; }
+
+ #Example,th,td{border-collapse:collapse; bord}
+#Example th{background: yellow;color: black;}
+#Example tr:nth-child(odd){background: gray;}
+
+#product,th,td{border-collapse: ;    }
+#product th{background:green; color:black;}
+#product tr:nth-child(even){background: yellow;color: black;}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+
+	.square{ width:300px;height:300px ;
+		   background: darkred;
+		   color: white;
+		   margin: 150px;
+		   padding: 50px;}
+
+	.rectriangle{width: 500px; height: 250px; 
+		         background: yellow; 
+	             color:black ; 
+	             margin: 150px; 
+	             padding: 50px;}
+
+    .cercle{width: 200px;height: 200px;
+            background: skyblue; 
+            color: white;
+    	    margin: 150px;
+    	    padding: 50px;
+    	    border-radius: 50%;}
+
+    .trapazoid{width:200px;height: 0px;
+    	       border-bottom: 150px solid green;
+    	       border-left: 50px solid transparent;
+    	       border-right: 50px solid transparent; }
+
+    .parallelogram{width: 500px;height: 250px; 
+                  background: blue;
+                  color: white;
+                  transform: skew(150deg);
+    	          margin: 150px;}
+
+    .oval{width:250px;height: 100px; 
+    	  background: pink;
+         color: black;
+    	 margin: 150px;
+    	 border-radius:50%;
+         rotate: 90deg}
+
+    .triangle{width: 0px;height: 0px;
+    	      border-right: 150px solid yellowgreen;
+    	      border-top: 75px solid transparent;
+    	      margin: 150px;
+    	      border-bottom: 75px solid transparent; }
+
+    .triangle02  {width: 0px;height: 0px;
+    	         border-bottom: 200px solid magenta;
+    	         border-top: 100px solid transparent;
+    	         margin: 150px;
+    	         border-right:100px solid transparent;
+    	         border-left: 100px solid transparent;}
+
+    .triangle03{width: 0px;height: 0px; 
+    	        border-top: 200px solid purple;
+    	        border-left:100px solid transparent ;
+    	        border-right: 100px solid transparent;
+    	        margin: 150px;  }
+
+    .triangle04{width: 0px;height: 0; 
+               margin: 150px;
+    	       border-left: 200px solid purple;
+    	       border-top:100px solid transparent;
+    	       border-bottom: 100px solid transparent; }
+
+    .halfcercle{ width: 0px;height: 0px;
+    	        border-left: 200px solid royalblue;
+    	       border-top: 200px solid royalblue;
+    	       margin: 150px;
+    	       border-bottom-right-radius:150%;
+    	       border-bottom-left-radius:15%;
+    	       border-top-right-radius:15% ;
+               rotate: 230deg; }
+
+    .outer{width:500px ;height: 400px;
+    	  background: green;
+    	  z-index: -10;
+    	  position: absolute;
+
+    }
+    .inner{width:200px ;height: 200px;
+    	  background: yellow;
+    	  position: relative;
+
+    }
+
+
+
+
+	</style>
+	
+</head>
+<body>
+
+	<div class="square">square</div>
+	<div class="rectriangle">rectriangle</div>
+	<div class="cercle">cercle</div>
+    <div class="trapazoid">trapazoid</div><br>
+    <div class="parallelogram">parallelogram</div>
+    <div class="oval">oval</div>
+    <div class="triangle">triangle</div>
+    <div class="triangle02">triangle02</div>
+    <div class="triangle03">triangle03</div>
+    <div class="triangle04">triangle04</div>
+    <div class="halfcercle">halfcercle</div>
+    <div class="outer">
+    	<div class="inner"></div>
+    	<div class="cercle"style="z-index:-1;"></div>
+
+    </div>
+</body>
+</html>
